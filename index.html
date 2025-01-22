@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Details Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Test Details Viewer</h1>
+
+      <!-- Dropdown List -->
+      <label for="testDropdown">Select a Test:</label>
+      <select id="testDropdown" onchange="showTestDetails()">
+        <option value="">Select a test</option>
+        <option value="HbA1c">HbA1c</option>
+        <option value="RandomBloodGlucose">Random Blood Glucose</option>
+        <option value="Hemoglobin">Hemoglobin</option>
+        <option value="ESR">ESR</option>
+        <option value="CRP">CRP</option>
+        <option value="Ferritin">Ferritin</option>
+        <option value="Iron">Iron</option>
+        <option value="VitaminD3">Vitamin D3</option>
+        <option value="VitaminB12">Vitamin B12</option>
+        <option value="Prolactin">Prolactin</option>
+        <option value="Testosterone">Testosterone</option>
+        <option value="PSA">PSA</option>
+        <!-- Add more options for the remaining tests -->
+        <option value="Sodium">Sodium</option>
+        <option value="Potassium">Potassium</option>
+        <option value="Chloride">Chloride</option>
+        <option value="Calcium">Calcium</option>
+        <option value="Magnesium">Magnesium</option>
+        <option value="Creatinine">Creatinine</option>
+        <option value="Urea">Urea</option>
+        <option value="Glucose">Glucose</option>
+        <option value="Bilirubin">Bilirubin</option>
+        <option value="Albumin">Albumin</option>
+        <option value="LiverFunctionTests">Liver Function Tests</option>
+        <option value="LDH">LDH</option>
+        <option value="CK">CK</option>
+        <option value="T3">T3</option>
+        <option value="T4">T4</option>
+        <option value="TSH">TSH</option>
+        <option value="Urinalysis">Urinalysis</option>
+      </select>
+
+      <!-- Test Details Section -->
+      <div id="testDetails" class="test-details">
+        <h2>Test Details</h2>
+        <div id="testDescription"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
